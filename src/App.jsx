@@ -1,6 +1,6 @@
 import "remixicon/fonts/remixicon.css";
 import LocomotiveScroll from "locomotive-scroll";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Blog from "./Blog";
@@ -13,7 +13,7 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className="bg-[#f5f3f0] max-lg:w-fit">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="work/:workId" element={<Works />} />
           <Route path="post/:postId" element={<Post />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
