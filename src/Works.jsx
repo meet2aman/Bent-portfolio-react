@@ -24,7 +24,7 @@ const Works = () => {
             {currentWork.title}
           </h1>
           <div className="lg:flex justify-between items-start lg:py-[40px] py-[20px]">
-            <h2 className=" lg:w-[70%] text-[30px] lg:text-[60px] font-[500] leading-none">
+            <h2 className=" lg:w-[70%] text-[30px] lg:text-[50px] font-[500] leading-none">
               {currentWork.subTitle}
             </h2>
             <div className="lg:w-[30%] text-[20px] font-[500]">

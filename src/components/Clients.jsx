@@ -2,7 +2,7 @@ import React from "react";
 
 const Clients = () => {
   return (
-    <div className="w-full lg:flex justify-between lg:py-[25px] py-10 md:px-[60px] px-[10px]  border-t-2 border-black">
+    <div className="w-full lg:flex justify-between lg:py-[25px] py-10 md:px-[60px] px-[10px]  border-y-2 border-black">
       <div className="flex justify-between lg:w-[40%] text-[20px] md:text-[20px] max-lg:text-[20px] lg:text-[23px] lg:pr-16 max-lg:mb-10">
         <h2 className=" font-[500]">(My Clients)</h2>
         <i className="ri-arrow-right-down-line"></i>

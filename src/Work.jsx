@@ -71,7 +71,7 @@ const Work = () => {
             people interact with technology."
         />
       </Link>
-      <Connect />
+      <Connect className="border-t-2 border-black"/>
     </main>
   );
 };

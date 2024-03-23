@@ -78,7 +78,9 @@ const Blog = () => {
           date={"May 17, 2023"}
         />
       </div>
-      <Connect />
+      <Connect className={
+        "border-t-2 border-black"
+      }/>
     </main>
   );
 };
