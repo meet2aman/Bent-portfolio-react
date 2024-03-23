@@ -7,7 +7,7 @@ const Image = ({ url }) => {
   // Z-axis movement effect
   const zOffset = useTransform(scrollYProgress, [0, 1], [0, -500]);
   return (
-    <div className="md:h-[800px] w-full !object-cover overflow-hidden max-sm:w-[878px]">
+    <div className="md:h-[600px] w-full !object-cover overflow-hidden">
       <motion.img
         style={{ scale: scale, translateZ: zOffset }}
         className="w-100% !object-cover scale-150"

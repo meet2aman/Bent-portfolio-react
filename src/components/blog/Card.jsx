@@ -19,12 +19,12 @@ const Card = ({ url, date, title, desc, id }) => {
           />
         </div>
 
-        <div className="p-10 group-hover:bg-gray-900 group-hover:text-white transition-all">
-          <h3 className="text-[30px] md:text-[20px]">({date})</h3>
-          <h2 className="text-[70px] md:text-[44px] font-[600] leading-[70px] md:leading-[45px] py-6">
+        <div className="py-10 px-[10px] lg:p-10 group-hover:bg-gray-900 group-hover:text-white transition-all">
+          <h3 className="text-[16px] md:text-[17px]">({date})</h3>
+          <h2 className="text-[40px] md:text-[35px] font-[600] leading-[40px] md:leading-[40px] py-6">
             {title}
           </h2>
-          <p className="text-[40px] md:text-[18px] leading-[60px] md:leading-[29px] tracking-wide">
+          <p className="text-[22px] md:text-[16px] leading-[30px] md:leading-[25px] tracking-wide">
             {desc}
           </p>
         </div>

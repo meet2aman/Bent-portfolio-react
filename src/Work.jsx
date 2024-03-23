@@ -8,15 +8,15 @@ const Work = () => {
   return (
     <main>
       <Navbar />
-      <div className=" py-[40px] md:px-[60px] max-md:px-[20px] ">
-        <h1 className="text-[150px] md:text-[140px] lg:text-[180px] font-[600] leading-none">
+      <div className=" py-[30px] md:px-[60px] max-md:px-[10px] ">
+        <h1 className="text-[80px] md:text-[140px] lg:text-[140px] font-[600] leading-none">
           Work
         </h1>
         <div className="flex justify-between items-end">
-          <h2 className="text-[70px] md:text-[80px] lg:w-1/2 leading-[70px] md:leading-[65px] font-[500]">
+          <h2 className="text-[38px] md:text-[60px] lg:w-1/2 leading-[35px] md:leading-[50px] font-[500]">
             Experience Innovative Design Solutions and Concepts
           </h2>
-          <div className="hidden lg:flex text-[35px] justify-center items-center">
+          <div className="hidden lg:flex text-[30px] justify-center items-center">
             <i className="ri-arrow-right-down-line mr-2"></i>
             <h3>Explore</h3>
           </div>

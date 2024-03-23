@@ -5,10 +5,10 @@ import Connect from "./components/Connect";
 import { Link, useParams } from "react-router-dom";
 import { data } from "./lib/data";
 const Post = () => {
-  let { postId } = useParams();
-  console.log(postId);
+  let { postId } = useParams();  // getting postId from params
+
   const [currentPost, setCurrentPost] = useState(
-    data.find((post) => post.id === postId)
+    data.find((post) => post.id === postId) // getting post based on params
   );
   const nextPostIndex =
     (data.findIndex((post) => post.id === postId) + 1) % data.length;
@@ -39,16 +39,16 @@ const Post = () => {
               />
             </div>
           </div>
-          <div className="p-[40px]">
-            <div className="flex flex-col justify-between gap-[10rem] border-b-2 border-black py-10">
+          <div className="p-2 md:px-[30px] lg:p-[40px]">
+            <div className="flex flex-col justify-between gap-6 border-b-2 border-black py-10">
               <div>
-                <h2 className="max-md:text-[40px]">{currentPost.date}</h2>
-                <h1 className="text-[90px] md:text-[70px] leading-[100px] md:leading-[70px] font-[600]">
+                <h2 className="">{currentPost.date}</h2>
+                <h1 className="text-[37px] md:text-[55px] leading-[36px] md:leading-[50px] font-[600]">
                   {currentPost.title}
                 </h1>
               </div>
               <div>
-                <p className="text-[40px] md:text-[22px] tracking-wide">
+                <p className="text-[16px] tracking-wide">
                   In today's fast-paced digital landscape, it's more important
                   than ever to capture your audience's attention quickly and
                   effectively. Motion design is a powerful tool that can help
@@ -61,7 +61,7 @@ const Post = () => {
                 <div className="mt-4">
                   <button
                     onClick={() => handleScroll("read-more")}
-                    className="flex justify-start items-center gap-4 text-[50px] md:text-[30px]"
+                    className="flex justify-start items-center gap-4 text-[24px] md:text-[20px] hover:underline transition-all underline-offset-4"
                   >
                     <i className="ri-arrow-right-down-line"></i>
                     <p>Read More</p>
@@ -71,10 +71,10 @@ const Post = () => {
             </div>
             <div id="read-more">
               <div className="mt-6">
-                <h2 className="text-[80px] md:text-[55px] font-[500] leading-none mb-8 mt-16">
+                <h2 className="text-[35px] md:text-[50px] font-[500] leading-none mb-8 mt-16">
                   Basics of Design
                 </h2>
-                <p className="tracking-wide md:leading-7 text-[40px] md:text-[19px]">
+                <p className="tracking-wide md:leading-7 text-[15px] md:text-[16px]">
                   Motion design is a powerful tool that can enhance your brand's
                   visual identity and captivate your audience. But what exactly
                   is motion design? In simple terms, it's the art of bringing
@@ -83,7 +83,7 @@ const Post = () => {
                   variety of applications, from explainer videos and social
                   media ads to website animations and digital signage.
                 </p>
-                <p className="mt-4 tracking-wide md:leading-7 text-[40px] md:text-[19px]">
+                <p className="mt-4 tracking-wide md:leading-7 text-[15px] md:text-[16px]">
                   The history of motion design can be traced back to the early
                   days of film and animation, but it wasn't until the rise of
                   digital media that motion design truly began to flourish. With
@@ -93,10 +93,10 @@ const Post = () => {
                 </p>
               </div>
               <div className="mt-6">
-                <h2 className="text-[80px] md:text-[55px] font-[500] leading-none mb-8 mt-16">
+                <h2 className="text-[35px] md:text-[50px] font-[500] leading-none mb-8 mt-16">
                   Principles of Design
                 </h2>
-                <p className="tracking-wide md:leading-7 text-[40px] md:text-[19px]">
+                <p className="tracking-wide md:leading-7 text-[15px] md:text-[16px]">
                   Effective motion design requires a solid understanding of the
                   principles of animation and design. These principles include
                   timing, spacing, staging, and more. Timing refers to the speed
@@ -106,7 +106,7 @@ const Post = () => {
                   as anticipation, exaggeration, and squash and stretch help to
                   create dynamic and engaging motion.
                 </p>
-                <p className="mt-4 tracking-wide md:leading-7 text-[40px] md:text-[19px]">
+                <p className="mt-4 tracking-wide md:leading-7 text-[15px] md:text-[16px]">
                   One of the most important aspects of motion design is
                   storytelling. Whether you're creating an explainer video or a
                   social media ad, the motion design should support and enhance
@@ -116,10 +116,10 @@ const Post = () => {
                 </p>
               </div>
               <div className="mt-6">
-                <h2 className="text-[80px] md:text-[55px] font-[500] leading-none mb-8 mt-16">
+                <h2 className="text-[35px] md:text-[50px] font-[500] leading-none mb-8 mt-16">
                   Benefits of Design for Your Brand
                 </h2>
-                <p className="tracking-wide md:leading-7 text-[40px] md:text-[19px]">
+                <p className="tracking-wide md:leading-7 text-[15px] md:text-[16px]">
                   Motion design can offer a wide range of benefits for your
                   brand. For one, it can help your brand stand out from the
                   competition by creating a unique and memorable visual
@@ -127,14 +127,14 @@ const Post = () => {
                   and drive conversions by capturing your audience's attention
                   and guiding them through a seamless and engaging experience.
                 </p>
-                <p className="mt-4 tracking-wide md:leading-7 text-[40px] md:text-[19px]">
+                <p className="mt-4 tracking-wide md:leading-7 text-[15px] md:text-[16px]">
                   Moreover, motion design can help to communicate complex ideas
                   and concepts in a simple and accessible way. Whether you're
                   explaining a product or service or highlighting your brand's
                   mission and values, motion design can help you connect with
                   your audience in a meaningful and impactful way.
                 </p>
-                <p className="mt-4 tracking-wide md:leading-7 text-[40px] md:text-[19px]">
+                <p className="mt-4 tracking-wide md:leading-7 text-[15px] md:text-[16px]">
                   Another benefit of motion design is its versatility. From
                   explainer videos and social media ads to website animations
                   and digital signage, motion design can be used across a wide
@@ -149,10 +149,10 @@ const Post = () => {
           <Link
             to={`/post/${nextPost.id}`}
             onClick={handleNextPostClick}
-            className="flex justify-center items-center flex-col font-[600] lg:w-[70%] mx-auto leading-none text-center p-20"
+            className="flex justify-center items-center flex-col font-[600] lg:w-[70%] mx-auto leading-none text-center p-3 lg:p-10"
           >
-            <h2 className="text-[30px]">( Next )</h2>
-            <h1 className="text-[80px]">{nextPost.title}</h1>
+            <h2 className="text-[20px] lg:text-[22px]">( Next )</h2>
+            <h1 className="text-[35px] lg:text-[60px]">{nextPost.title}</h1>
           </Link>
         </section>
         <Link to={`/post/${nextPost.id}`} onClick={handleNextPostClick}>

@@ -19,15 +19,15 @@ const Works = () => {
     <>
       <main>
         <Navbar />
-        <div className="px-[50px]">
-          <h1 className="text-[150px] font-[600] pt-[40px] leading-none">
+        <div className="px-[10px] md:px-[30px] lg:px-[50px]">
+          <h1 className="text-[60px] md:text-[100px] lg:text-[150px] font-[600] pt-[40px] leading-none">
             {currentWork.title}
           </h1>
-          <div className="flex justify-between items-start py-[40px]">
-            <h2 className="w-[70%] text-[60px] font-[500] leading-none">
+          <div className="lg:flex justify-between items-start py-[40px] ">
+            <h2 className=" lg:w-[70%] text-[30px] lg:text-[60px] font-[500] leading-none">
               {currentWork.subTitle}
             </h2>
-            <div className="w-[30%] text-[20px] font-[500]">
+            <div className="lg:w-[30%] text-[20px] font-[500]">
               <div className="flex justify-between items-center border-b-2 border-black py-3">
                 <h3>(Client)</h3>
                 <h1>{currentWork.client}</h1>
@@ -42,7 +42,7 @@ const Works = () => {
               </div>
               <div className="flex justify-between items-center my-3">
                 <h3>(Service)</h3>
-                <button className="py-2 px-3 capitalize bg-slate-800 rounded-full text-white text-[15px]">
+                <button className="py-2 px-3 capitalize bg-slate-800 rounded-full text-white text-[11px] hover:bg-white hover:text-black hover:shadow-lg">
                   Digital design
                 </button>
               </div>
@@ -50,20 +50,20 @@ const Works = () => {
           </div>
         </div>
         <Image1 url={currentWork.image1} />
-        <section className="grid grid-cols-3 p-[40px]">
-          <div className="col-span-1 leading-none flex justify-between items-start text-[30px] border-r-2 border-black pr-12 sticky top-0">
-            <h2>(Details)</h2>
+        <section className="lg:grid grid-cols-3 p-[10px] md:p-[30px] lg:p-[40px] border-b-[2px] border-black">
+          <div className="col-span-1 leading-none flex justify-between items-start text-[20px] lg:text-[22px] lg:border-r-2 border-black lg:pr-12 lg:sticky top-0">
+            <h2 className="">(Details)</h2>
             <i className="ri-arrow-right-down-line"></i>
           </div>
-          <div className="col-span-2 px-12 overflow-auto">
-            <div className="border-b-2 border-black pb-20">
-              <h3 className="text-[20px] font-[500] tracking-wide leading-none">
+          <div className="col-span-2 lg:px-12 overflow-auto">
+            <div className="border-b-2 border-black py-10 lg:pt-0">
+              <h3 className="text-[18px] font-[500] tracking-wide leading-none">
                 (Challenge)
               </h3>
-              <h1 className="text-[50px] font-[500]">
+              <h1 className="text-[35px] font-[500] leading-8 py-3">
                 Complex Design Challenges
               </h1>
-              <p className="text-[22px] tracking-wide text-gray-600">
+              <p className="text-[16px] tracking-wide text-gray-600">
                 Developing the project was a challenging task, and I encountered
                 several design obstacles along the way. I had to create an
                 intuitive user interface that would work seamlessly with
@@ -72,14 +72,14 @@ const Works = () => {
                 platform was scalable, secure, and user-friendly.
               </p>
             </div>
-            <div className="py-20 border-b-2 border-black">
-              <h3 className="text-[20px] tracking-wide leading-none font-[500]">
+            <div className="py-8 lg:py-10 border-b-2 border-black">
+              <h3 className="text-[18px] tracking-wide leading-none font-[500]">
                 (Goal)
               </h3>
-              <h1 className="text-[50px] font-[500]">
+              <h1 className="text-[35px] font-[500] leading-8 py-3">
                 Enhance User Experience
               </h1>
-              <p className="text-[22px] tracking-wide text-gray-600">
+              <p className="text-[16px] tracking-wide text-gray-600">
                 My primary goal with this project was to design an innovative
                 platform that could redefine the way people interact with
                 technology. I wanted to create a product that was intuitive,
@@ -87,14 +87,14 @@ const Works = () => {
                 features that would enhance the user experience.
               </p>
             </div>
-            <div className="pt-20">
-              <h3 className="text-[20px] tracking-wide leading-none font-[500]">
+            <div className="pt-8 lg:pt-10">
+              <h3 className="text-[18px] tracking-wide leading-none font-[500]">
                 (Result)
               </h3>
-              <h1 className="text-[50px] font-[500]">
+              <h1 className="text-[35px] font-[500] leading-9 py-3">
                 Revolutionizing the Digital Landscape
               </h1>
-              <p className="text-[22px] tracking-wide text-gray-600">
+              <p className="text-[16px] tracking-wide text-gray-600">
                 The successful launch of this project has revolutionized the
                 digital landscape. With my design, I have provided users with an
                 unparalleled experience that surpasses all expectations. The
@@ -106,16 +106,18 @@ const Works = () => {
             </div>
           </div>
         </section>
-        <div className="flex justify-between items-center leading-none text-[33px] font-[500] p-[40px]">
+        <div className="flex justify-between items-center leading-none text-[20px] lg:text-[20px] font-[500] px-[10px] py-[20px] md:p-[30px] lg:p-[30px]">
           <h2>(Project Gallery)</h2>
           <i className="ri-arrow-right-down-line"></i>
         </div>
         <Image1 url={currentWork.image2} />
         <Image1 url={currentWork.image3} />
         <Link to={`/work/${nextWork.id}`} onClick={handleNextWorkClick}>
-          <div className="flex flex-col justify-center items-center text-center leading-none p-[40px]">
-            <h3 className="text-[30px] font-[500]">(Next)</h3>
-            <h1 className="text-[160px] font-[700] ">{nextWork.title}</h1>
+          <div className="flex flex-col justify-center items-center text-center leading-none p-[20px] lg:p-[40px]">
+            <h3 className=" text-[20px] lg:text-[30px] font-[500]">(Next)</h3>
+            <h1 className="text-[40px] md:text-[65px] lg:text-[90px] font-[700] ">
+              {nextWork.title}
+            </h1>
           </div>
           <Image1 url={nextWork.image1} />
         </Link>

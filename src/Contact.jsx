@@ -9,23 +9,23 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xpznzygv");
   if (state.succeeded) {
     return (
-      <div className="">
-        <div className="h-45% py-[40px] md:px-[60px] px-[50px]">
-          <h1 className="md:text-[190px] text-[160px] leading-[140px] md:leading-[144px] font-[600] tracking-tight">
+      <div className=" bg-white h-screen">
+        <div className="h-45% bg-[#f5f3f0] py-[20px] md:px-[60px] px-[50px]">
+          <div className="md:text-[150px] text-[160px] font-[600] tracking-tight leading-none">
             Hey{" "}
-            <span className="capatalize">
+            <h1 className="capatalize leading-[45px] inline">
               {name} <span>🤗</span>
-            </span>
+            </h1>
             <br />
-            <span className="text-[130px] !leading-[50px]">
+            <h1 className="text-[100px] leading-[100px]">
               Your Request has been sent successfully
-            </span>
-          </h1>
-          <div className="w-full flex justify-between pt-4 items-center text-[32px] font-[500]">
-            <h1 className="mt-4">({email})</h1>
+            </h1>
+          </div>
+          <div className="w-full flex justify-between pt-4 items-center text-[23px] font-[500]">
+            <h1 className="">({email})</h1>
             <div className="cursor-pointer md:block flex justify-between items-center">
               <Link to={"/"}>
-                <button className="py-2 px-4 tracking-wide text-white rounded-lg text-2xl bg-black hover:text-black hover:bg-white shadow-md">
+                <button className="py-1 px-3 tracking-wide text-white rounded-lg text-lg bg-black hover:text-black hover:bg-white shadow-md">
                   Home
                 </button>
               </Link>
@@ -58,7 +58,7 @@ const Contact = () => {
         </div>
         <div className="md:w-[50%] max-lg:px-[20px] lg:px-[30px] md:absolute right-0 top-[90px] text-black overflow-y-auto max-md:mt-6">
           <h3 className="text-[30px] font-[500]">(Contact)</h3>
-          <h1 className="lg:text-[170px] md:text-[100px] text-[60px] lg:leading-[140px] leading-none font-[600]">
+          <h1 className="lg:text-[140px] md:text-[100px] text-[60px] lg:leading-[140px] leading-none font-[600]">
             Let's Get In Touch
           </h1>
           <form
@@ -72,7 +72,7 @@ const Contact = () => {
               onChange={(e) => setName(e.target.value)}
               value={name}
               placeholder="Enter Your Name"
-              className="p-4 bg-slate-200 text-black w-full text-lg tracking-wide border-2 border-black"
+              className="p-2 bg-slate-200 text-black w-full text-md tracking-wide border-2 border-black"
             />
             <input
               id="email"
@@ -81,7 +81,7 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               placeholder="Enter Your Email"
-              className="p-4 bg-slate-200 text-black w-full  text-lg tracking-wide border-2 border-black"
+              className="p-2 bg-slate-200 text-black w-full  text-md tracking-wide border-2 border-black"
             />
             <ValidationError
               prefix="Email"
@@ -90,7 +90,7 @@ const Contact = () => {
             />
 
             <textarea
-              className="w-full text-black bg-slate-200 p-4 text-lg tracking-wide border-2 border-black"
+              className="w-full text-black bg-slate-200 p-2 text-md tracking-wide border-2 border-black"
               placeholder="Enter your message"
               id="message"
               name="message"
@@ -107,7 +107,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={state.submitting}
-              className="py-2 px-4 tracking-wide text-white rounded-lg text-2xl bg-black hover:text-black hover:bg-white shadow-md"
+              className="py-2 px-4 tracking-wide text-white rounded-lg text-xl bg-black hover:text-black hover:bg-white shadow-md"
             >
               Send Message
             </button>

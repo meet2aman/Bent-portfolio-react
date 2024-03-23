@@ -11,13 +11,13 @@ const Name = () => {
     }
   };
   return (
-    <div className="h-45% py-[40px] md:px-[60px] px-[50px]">
-      <h1 className="md:text-[190px] text-[160px] leading-[130px] md:leading-[144px] font-[600] tracking-tight">
+    <div className="pt-[40px] pb-[20px] md:px-[60px] px-[10px]">
+      <h1 className="lg:text-[150px] text-[40px] md:text-[100px] leading-[35px] md:leading-[80px] lg:leading-[120px] font-[600] tracking-tight">
         Aman Kushwaha <br />
         Digital Designer
       </h1>
-      <div className="w-full flex justify-between pt-4 items-center text-[32px] font-[500]">
-        <h1 className="mt-4">(Delhi, India)</h1>
+      <div className="w-full flex justify-between pt-4 items-center text-[15px] lg:text-[25px] font-[500]">
+        <h1 className="mt-2">(Delhi, India)</h1>
         <div className="cursor-pointer md:block flex justify-between items-center">
           <a onClick={() => handleScroll("read-more")}>
             <i className="ri-arrow-right-down-line mr-2"></i>

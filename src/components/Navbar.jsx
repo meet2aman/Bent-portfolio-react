@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -76,10 +77,10 @@ const Navbar = () => {
     transition: "background-color 0.3s ease",
   };
   return (
-    <nav className="fixed z-30 flex justify-end items-center w-full text-white bg-transparent max-lg:px-5 lg:px-20 py-10 gap-2">
+    <nav className="fixed z-30 flex  justify-end items-center w-full text-white bg-transparent px-3 lg:px-20 py-7 gap-2">
       <h3
         style={h3Style}
-        className="px-[23px] py-[15px] rounded-full cursor-pointer hover:bg-white hover:text-black transition-all"
+        className="rounded-full px-[16px] py-[10px] text-[13px] cursor-pointer hover:bg-white hover:text-black transition-all"
       >
         0
       </h3>
@@ -88,23 +89,24 @@ const Navbar = () => {
         <>
           {toggle ? (
             <>
-              <h3
+              <div
                 onClick={toggleMenu}
                 ref={menuRef}
                 className="bg-black px-[20px] py-[15px] rounded-full cursor-pointer hover:bg-white hover:text-black transition-all"
               >
                 <i className="ri-close-fill" />
-              </h3>
+              </div>
             </>
           ) : (
             <>
-              <h3
+              <div
                 onClick={toggleMenu}
                 ref={menuRef}
-                className="bg-black px-[20px] py-[15px] rounded-full cursor-pointer hover:bg-white hover:text-black transition-all"
+                className="bg-black  px-[14px] py-[11px] text-[13px] rounded-full
+                cursor-pointer hover:bg-white hover:text-black transition-all"
               >
                 <i className="ri-menu-line" />
-              </h3>
+              </div>
             </>
           )}
         </>
@@ -113,7 +115,7 @@ const Navbar = () => {
           <h3
             onClick={toggleMenu}
             ref={menuRef}
-            className="bg-black px-[20px] py-[15px] rounded-full cursor-pointer hover:bg-white hover:text-black transition-all"
+            className="bg-black px-[15px] py-[10px] text-[13px] rounded-full cursor-pointer hover:bg-white hover:text-black transition-all"
           >
             Menu
           </h3>
@@ -132,12 +134,19 @@ const Navbar = () => {
               </div>
             ))}
           </div> */}
-          <div className="bg-black flex items-center justify-center uppercase w-full h-screen flex-col absolute top-0 right-0 gap-10 p-8">
-            <div>
+          <div className="bg-black flex items-center justify-center uppercase w-full h-screen flex-col absolute top-0 right-0 gap-10 p-12">
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+                rotate: 90,
+                transition: { duration: 0.5 },
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
               <i className="ri-close-fill text-6xl bg-white rounded-full text-black cursor-pointer hover:bg-yellow-500 hover:text-white transition-all" />
-            </div>
+            </motion.div>
             {Links.map((items) => (
-              <div className="flex justify-start text-6xl leading-[50px] md:leading-none md:text-8xl font-[600] tracking-wide gap-6 hover:text-yellow-500 hover:tracking-widest transition-all">
+              <div className="flex justify-start text-5xl leading-[50px] md:leading-none md:text-7xl font-[600] tracking-wide gap-6 hover:text-yellow-500 hover:tracking-widest hover:italic transition-all">
                 <i className="ri-arrow-right-down-line"></i>
                 <Link to={items.url} key={items.id}>
                   {items.name}

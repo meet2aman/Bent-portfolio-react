@@ -15,20 +15,22 @@ const About = () => {
         </div>
         <div
           data-scroll-container
-          className="text-5xl md:w-[50%] max-lg:px-[20px] lg:px-[30px] md:absolute right-0 top-[100px] text-black overflow-y-auto"
+          className="text-5xl md:w-[50%] px-[10px] md:px-[20px] lg:px-[30px] md:absolute right-0 top-[100px] text-black overflow-y-auto"
         >
-          <h2 className="max-sm:pt-10 max-lg:text-[32px]">(About Me)</h2>
+          <h2 className="max-sm:pt-10 text-[20px] md:text-[30px]">
+            (About Me)
+          </h2>
           <h1
             data-scroll-speed="1.5"
-            className="max-xl:text-[120px] xl:text-[130px] lg:leading-[130px] max-lg:text-[70px] max-lg:font-[700] font-[600] lg:my-10 max-lg:mb-5"
+            className="max-xl:text-[120px] xl:text-[116px]  lg:leading-[100px] max-lg:text-[70px] max-sm:text-[60px] max-lg:font-[700] font-[600] lg:mb-10 max-lg:mb-5"
           >
             Aman Kushwaha
           </h1>
-          <p className="lg:text-[60px] max-lg:text-[45px]">
+          <p className="text-[30px] md:text-[40px] lg:text-[45px]">
             A Berlin-based Digital Designer and Art Director with a Passion for
             Captivating Visual Experiences.
           </p>
-          <p className="text-[25px] font-[400] leading-[35px] mt-10 text-slate-600">
+          <p className="text-[18px] font-[400] leading-[25px] mt-10 text-slate-700">
             As a digital designer and art director, I am passionate about
             creating captivating visual experiences that leave a lasting
             impression. Based in Berlin, I draw inspiration from the city's
@@ -36,7 +38,7 @@ const About = () => {
             in the industry, I have honed my skills in digital design, art
             direction, interaction design, and motion design.
           </p>
-          <p className="text-[25px] font-[400] leading-[35px] mt-10 text-slate-600 border-b-2 border-black pb-10">
+          <p className="text-[18px] font-[400] leading-[25px] mt-10 text-slate-700 border-b-2 border-black pb-10">
             As a digital designer and art director, I am passionate about
             creating captivating visual experiences that leave a lasting
             impression. Based in Berlin, I draw inspiration from the city's
@@ -46,14 +48,14 @@ const About = () => {
           </p>
 
           <div>
-            <h2 className="lg:text-[100px] max-lg:text-[75px] font-[600] py-10">
+            <h2 className="lg:text-[80px] max-lg:text-[75px] max-sm:text-[60px] font-[600] py-10">
               Refrences
             </h2>
-            <p className="md:text-[45px] text-[30px] font-[600]">
+            <p className="text-[30px] md:text-[40px] lg:text-[45px]font-[500] lg:font-[600]">
               Trusted by Leading Brands: A Look at the Companies That Have
               Benefited from Bent Lindberg's Expertise.
             </p>
-            <div className="lg:flex justify-between py-10 text-4xl text-slate-800 border-b-2 border-black">
+            <div className="lg:flex justify-between py-10 text-2xl lg:text-[25px] text-slate-800 border-b-2 border-black">
               <div className="mb-5">
                 <div className="flex items-center gap-10 pb-4">
                   <i className="ri-arrow-right-down-line"></i>
@@ -97,30 +99,30 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <h2 className="lg:text-[100px] max-lg:text-[75px] font-[600] py-10">
+            <h2 className="lg:text-[80px] max-lg:text-[75px] max-sm:text-[60px] font-[600] py-10">
               Awards
             </h2>
-            <p className="md:text-[45px] text-[30px] font-[600] pb-12">
+            <p className="text-[30px] md:text-[40px] lg:text-[45px] font-[500] lg:font-[600] pb-12">
               Trusted by Leading Brands: A Look at the Companies That Have
               Benefited from Bent Lindberg's Expertise.
             </p>
-            <div className="flex justify-between text-[30px] py-8 border-y-2 border-black">
+            <div className="flex justify-between text-[25px] lg:py-5 py-4 border-y-2 border-black">
               <h3>CSS SOTY</h3>
               <h3>(2023)</h3>
             </div>
-            <div className="flex justify-between text-[30px] py-8 border-b-2 border-black">
+            <div className="flex justify-between text-[25px] lg:py-5 py-4 border-b-2 border-black">
               <h3>Awwwards SOTD</h3>
               <h3>(2023)</h3>
             </div>
-            <div className="flex justify-between text-[30px] py-8 border-b-2 border-black">
+            <div className="flex justify-between text-[25px] lg:py-5 py-4 border-b-2 border-black">
               <h3>Awwwards SOTD</h3>
               <h3>(2023)</h3>
             </div>
-            <div className="flex justify-between text-[30px] py-8 border-b-2 border-black">
+            <div className="flex justify-between text-[25px] lg:py-5 py-4 border-b-2 border-black">
               <h3>CSS SOTD</h3>
               <h3>(2023)</h3>
             </div>
-            <div className="flex justify-between text-[30px] py-8 border-b-2 border-black">
+            <div className="flex justify-between text-[25px] lg:py-5 py-4">
               <h3>Awwwards SOTY</h3>
               <h3>(2023)</h3>
             </div>

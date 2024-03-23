@@ -12,7 +12,7 @@ import Works from "./Works";
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className="bg-[#f5f3f0] max-lg:w-fit">
+    <div>
       <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />

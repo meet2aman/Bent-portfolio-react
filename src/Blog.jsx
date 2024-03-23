@@ -7,15 +7,15 @@ const Blog = () => {
   return (
     <main>
       <Navbar />
-      <div className="h-45% py-[40px] md:px-[60px] max-md:px-[20px] ">
-        <h1 className="text-[150px] md:text-[140px] lg:text-[180px] font-[600] leading-none">
+      <div className="h-45% py-[30px] md:px-[60px] max-md:px-[20px] ">
+        <h1 className="text-[100px] md:text-[140px] lg:text-[140px] font-[600] leading-none">
           News
         </h1>
         <div className="flex justify-between items-end">
-          <h2 className="text-[80px] md:text-[80px] lg:w-1/2 leading-[70px] md:leading-[70px] font-[500]">
+          <h2 className="text-[40px] md:text-[60px] lg:w-1/2 leading-[37px] md:leading-[50px] font-[500]">
             Exploring Creativity and Innovation Daily
           </h2>
-          <div className="hidden lg:flex text-[35px] justify-center items-center cursor-pointer">
+          <div className="hidden lg:flex text-[28px] justify-center items-center cursor-pointer">
             <i className="ri-arrow-right-down-line mr-2"></i>
             <h3>Explore</h3>
           </div>
@@ -45,7 +45,7 @@ const Blog = () => {
           url="https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cfb07bee0f95ffcf9bc6c_post-03-preview-p-800.webp"
           title="The Art of Art Direction: Elevating Your Brand's Visual Identity"
           desc={
-            "Explore the role of art direction in building a memorable and effective brand identity."
+            "Explore the role of art direction in building a memorable and effective brand identity noticable equally."
           }
           date={"May 17, 2023"}
         />
@@ -73,7 +73,7 @@ const Blog = () => {
           url="https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cfb2265ebe2832999e4ba_post-06-preview-p-800.webp"
           title="Colla­boration in Digital Design: Working Together for Success"
           desc={
-            "Explore the role of art direction in building a memorable and effective brand identity."
+            "Explore the role of art direction in building a memorable and effective brand identity servicable."
           }
           date={"May 17, 2023"}
         />
