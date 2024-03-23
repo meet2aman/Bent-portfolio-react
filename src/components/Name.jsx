@@ -12,7 +12,7 @@ const Name = () => {
   };
   return (
     <div className="pt-[40px] pb-[20px] md:px-[60px] px-[10px]">
-      <h1 className="lg:text-[150px] text-[40px] md:text-[100px] leading-[35px] md:leading-[80px] lg:leading-[120px] font-[600] tracking-tight">
+      <h1 className="lg:text-[150px] text-[45px] md:text-[100px] leading-[35px] md:leading-[80px] lg:leading-[120px] font-[600] tracking-tight">
         Aman Kushwaha <br />
         Digital Designer
       </h1>

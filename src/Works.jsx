@@ -23,7 +23,7 @@ const Works = () => {
           <h1 className="text-[60px] md:text-[100px] lg:text-[150px] font-[600] pt-[40px] leading-none">
             {currentWork.title}
           </h1>
-          <div className="lg:flex justify-between items-start py-[40px] ">
+          <div className="lg:flex justify-between items-start lg:py-[40px] py-[20px]">
             <h2 className=" lg:w-[70%] text-[30px] lg:text-[60px] font-[500] leading-none">
               {currentWork.subTitle}
             </h2>

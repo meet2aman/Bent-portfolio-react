@@ -9,7 +9,7 @@ const Work = () => {
     <main>
       <Navbar />
       <div className=" py-[30px] md:px-[60px] max-md:px-[10px] ">
-        <h1 className="text-[80px] md:text-[140px] lg:text-[140px] font-[600] leading-none">
+        <h1 className="text-[100px] md:text-[140px] lg:text-[140px] font-[600] leading-none">
           Work
         </h1>
         <div className="flex justify-between items-end">

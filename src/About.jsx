@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 
 const About = () => {
+  const date = new Date();
   return (
     <main>
       <Navbar />
@@ -22,7 +23,7 @@ const About = () => {
           </h2>
           <h1
             data-scroll-speed="1.5"
-            className="max-xl:text-[120px] xl:text-[116px]  lg:leading-[100px] max-lg:text-[70px] max-sm:text-[60px] max-lg:font-[700] font-[600] lg:mb-10 max-lg:mb-5"
+            className="max-xl:text-[120px] xl:text-[116px]  lg:leading-[100px] max-lg:text-[70px] max-sm:text-[65px] max-lg:font-[700] font-[600] lg:mb-10 max-lg:mb-5"
           >
             Aman Kushwaha
           </h1>
@@ -51,7 +52,7 @@ const About = () => {
             <h2 className="lg:text-[80px] max-lg:text-[75px] max-sm:text-[60px] font-[600] py-10">
               Refrences
             </h2>
-            <p className="text-[30px] md:text-[40px] lg:text-[45px]font-[500] lg:font-[600]">
+            <p className="text-[30px] md:text-[40px] lg:text-[45px] lg:font-[600]">
               Trusted by Leading Brands: A Look at the Companies That Have
               Benefited from Bent Lindberg's Expertise.
             </p>
@@ -102,29 +103,29 @@ const About = () => {
             <h2 className="lg:text-[80px] max-lg:text-[75px] max-sm:text-[60px] font-[600] py-10">
               Awards
             </h2>
-            <p className="text-[30px] md:text-[40px] lg:text-[45px] font-[500] lg:font-[600] pb-12">
+            <p className="text-[30px] md:text-[40px] lg:text-[45px] lg:font-[600] pb-12">
               Trusted by Leading Brands: A Look at the Companies That Have
               Benefited from Bent Lindberg's Expertise.
             </p>
             <div className="flex justify-between text-[25px] lg:py-5 py-4 border-y-2 border-black">
               <h3>CSS SOTY</h3>
-              <h3>(2023)</h3>
+              <h3>({date.getFullYear()})</h3>
             </div>
             <div className="flex justify-between text-[25px] lg:py-5 py-4 border-b-2 border-black">
               <h3>Awwwards SOTD</h3>
-              <h3>(2023)</h3>
+              <h3>({date.getFullYear()})</h3>
             </div>
             <div className="flex justify-between text-[25px] lg:py-5 py-4 border-b-2 border-black">
               <h3>Awwwards SOTD</h3>
-              <h3>(2023)</h3>
+              <h3>({date.getFullYear()})</h3>
             </div>
             <div className="flex justify-between text-[25px] lg:py-5 py-4 border-b-2 border-black">
               <h3>CSS SOTD</h3>
-              <h3>(2023)</h3>
+              <h3>({date.getFullYear()})</h3>
             </div>
             <div className="flex justify-between text-[25px] lg:py-5 py-4">
               <h3>Awwwards SOTY</h3>
-              <h3>(2023)</h3>
+              <h3>({date.getFullYear()})</h3>
             </div>
           </div>
         </div>

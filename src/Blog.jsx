@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <main>
       <Navbar />
-      <div className="h-45% py-[30px] md:px-[60px] max-md:px-[20px] ">
+      <div className="h-45% py-[30px] md:px-[60px] max-md:px-[17px] ">
         <h1 className="text-[100px] md:text-[140px] lg:text-[140px] font-[600] leading-none">
           News
         </h1>

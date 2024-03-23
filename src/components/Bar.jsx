@@ -7,7 +7,7 @@ const Bar = ({ name, desc }) => {
         {name}
       </h1>
       <div className="flex lg:w-[50%] flex-col text-slate-700 text-[30px] font-[500]">
-        <p className="lg:pr-[20px] leading-[25px] pb-4 text-[18px] lg:text-[20px] tracking-wide">
+        <p className="lg:pr-[20px] leading-[25px] pb-4 text-[16px] lg:text-[20px] tracking-wide">
           {desc}
         </p>
         <div className="flex justify-start gap-6 text-white !w-auto lg:w-[40%]">

@@ -57,7 +57,7 @@ const Contact = () => {
           />
         </div>
         <div className="md:w-[50%] max-lg:px-[20px] lg:px-[30px] md:absolute right-0 top-[90px] text-black overflow-y-auto max-md:mt-6">
-          <h3 className="text-[30px] font-[500]">(Contact)</h3>
+          <h3 className=" text-[20px] md:text-[30px] font-[500]">(Contact)</h3>
           <h1 className="lg:text-[140px] md:text-[100px] text-[60px] lg:leading-[140px] leading-none font-[600]">
             Let's Get In Touch
           </h1>

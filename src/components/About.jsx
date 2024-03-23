@@ -13,7 +13,7 @@ const About = () => {
       </h2>
       <div className="about-right md:w-40% max-sm:w-full flex flex-col justify-between items-start md:border-l-2 border-black md:pl-[50px]">
         <Link to="./about/about.html">
-          <h2 className="max-sm:text-[20px] sm:text-[20px] md:text-[20px] lg:text-[25px] block font-semibold">
+          <h2 className="max-sm:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px] block font-[500]">
             ( About Me )
           </h2>
         </Link>
