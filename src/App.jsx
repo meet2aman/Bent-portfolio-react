@@ -14,7 +14,7 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="work/:workId" element={<Works />} />
           <Route path="post/:postId" element={<Post />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
